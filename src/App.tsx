@@ -1,11 +1,13 @@
-import { Button } from "./components/ui/button";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-      <h2 className="bg-red-500">weather app</h2>
-      <Button>click me</Button>
+      <BrowserRouter>
+        <Layout>Hello</Layout>
+      </BrowserRouter>
     </>
   );
 }
